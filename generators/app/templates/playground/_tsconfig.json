@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+	"baseUrl": ".",
     "outDir": "../.playground",
     "target": "es5",
     "module": "commonjs",
@@ -9,6 +10,9 @@
     "experimentalDecorators": true,
     "lib": [ "es2015", "dom" ],
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+	"paths": {
+	  "<%= props.libraryName.kebabCase %>": ["../dist/index.d.ts"]
+	}
   }
 }

@@ -35,7 +35,7 @@ const setupPlayground =
     generator.fs.copyTpl(
       generator.templatePath('playground/_tsconfig.json'),
       generator.destinationPath('playground/tsconfig.json'),
-	  {
+      {
         props: generator.props
       }
     );
